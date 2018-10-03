@@ -56,7 +56,6 @@
     "build": "babel src -d lib --source-maps inline",
     "dist": "watchify -v -d -r ./lib:docx2html -o dist/index.js -i jquery",
     "dist.min": "browserify -g uglifyify -r ./lib:docx2html -o dist/index.js",
-
     "test": "jasmine",
     "test.debug": "node --debug-brk .jasmine.js",
     "karma": "karma start"
